@@ -1,0 +1,63 @@
+<header class="p-4 bg-dark text-white mb-3">
+  <div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <h4 class="user text-start mt-3">Welcome {{dataUser.email}}</h4>
+      </div>
+      <div class="col mt-3">
+        <button type="button" class=" logout btn btn-warning btn-lg" (click)="logout()">Logout</button>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class=" title container  text-center">
+  <div class="row">
+
+    <div class="col">
+      <a class="btn btn-primary btn-lg add" [routerLink]="['addClient']" routerLinkActive="router-link-active">Add new
+        Client</a>
+    </div>
+  <input type="text" placeholder="Search a client by name, contry, email or phone" class=" col search form-control" [(ngModel)]="searchClient">
+
+  </div>
+</div>
+
+<div class="row clients my-0 ms-1">
+
+  
+  <div *ngFor="let clients of listClients | filter: searchClient" class="col-xl-4 col-sm-6 col-xs-12">
+    <div class="card" style="width: 18rem;">
+
+      <div class="card-body">
+        <span class="badge rounded-pill text-bg-info mb-4 text-center">{{clients.name}}</span>
+        <p class="card-text text-center"><strong>Email</strong>: {{clients.email}}</p>
+        <p class="card-text text-center"><strong>Telephone</strong>: {{clients.telephone}}</p>
+        <p class="card-text text-center mb-3"><strong>Country</strong>: {{clients.country}}</p>
+        <div class="text-center me-5">
+          <a class="btn btn-danger"  (click)="deleteClient(clients._id)">Delete</a>
+          <a class="btn btn-primary me-4" [routerLink]="['/editClient/',clients._id]" routerLinkActive="router-link-active" >Edit</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+  <div class="container text-center just">
+    <div class="row">
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        Column
+      </div>
+      <div class="col">
+        Column
+      </div>
+    </div>
+  </div>
+  -->
+  <br>
+  <br>

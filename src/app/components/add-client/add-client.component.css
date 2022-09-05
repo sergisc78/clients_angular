@@ -1,0 +1,31 @@
+.btn {
+  float: right;
+}
+.badge{
+   width: 200px;
+   font-size: 15px;
+   text-align: center;
+}
+.user {
+  font-family: 'Roboto', sans-serif;
+}
+
+.addForm {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.logout {
+  width: 150px;
+  font-family: 'Roboto', sans-serif;
+}
+
+h5 {
+  font-size: 40px;
+}
+
+.form-control,
+.buttons {
+  font-size: 30px;
+
+}

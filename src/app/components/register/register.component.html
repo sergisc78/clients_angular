@@ -1,0 +1,39 @@
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+  
+        <div class="card">
+          <div class="card-body text-center">
+            <div class="body">
+              <img src="../../../assets/images/add-user.png" alt="login" width="100">
+            </div>
+            <span class="titulo mb-2"><strong>Register</strong></span>
+            <form [formGroup]="registerForm" class="mb-3" (ngSubmit)="registerUser()">
+              <div class="mb-3">
+                <input type="email" class="form-control" formControlName="email" formControlName="email" placeholder="name@example.com">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" formControlName="password" formControlName="password" placeholder="Password (minimum 6 characters)">
+              </div>
+              <div class="mb-3">
+                <input type="password" class="form-control" formControlName="confirmPassword" placeholder="Confirm Password">
+              </div>
+              <div class="d-grid gap-2">
+                <button type="submit"  class="btn btn-primary float-end mt-3"><strong>Register</strong></button>
+              </div>
+              <br>
+              <p class="registro mt-2"><a class="link" [routerLink]="['/home']"
+                  routerLinkActive="router-link-active"><strong>Back</strong></a></p>
+              <br>
+              <br>
+  
+            </form>
+  
+          </div>
+  
+        </div>
+      </div>
+  
+    </div>
+  
+  </div>

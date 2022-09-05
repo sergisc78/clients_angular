@@ -1,0 +1,45 @@
+.btn {
+  float: right;
+}
+.user,.logout{
+  font-family: 'Roboto', sans-serif;
+}
+.logout{
+  width: 150px;
+}
+.user{
+font-size: 30px;
+}
+.badge{
+  font-size:20px
+}
+
+.bg-dark {
+  height: 120px;
+}
+
+.title{
+    color: whitesmoke;
+}
+.search{
+    width: 300px;
+    height: 50px;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+}
+.card{
+    margin-top: 130px;
+    margin-left: 200px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+.add{
+  margin-left: 100px;
+  font-family: 'Roboto', sans-serif;
+  float:left;
+  margin-left:30px;
+}
+.clients{
+  margin-right: 400px;
+}

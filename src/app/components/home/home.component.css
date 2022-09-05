@@ -1,0 +1,46 @@
+.container {
+ /* border-radius: 20px;
+  height: 300px;
+  width: 80%;
+  font-family: 'Arima', cursive;
+  margin-top: 300px;*/
+  height: 400px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+header{
+  font-family: 'Roboto', sans-serif;
+  
+  
+}
+.introduction{
+  width: 600px;
+  height: 300px;
+  background-color: whitesmoke;
+  /* centrar vertical y horizontalmente */
+  font-family: 'Roboto', sans-serif;
+  
+  
+  
+}
+
+h4 {
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-size: 30px
+}
+
+button {
+  border-radius: 15px;
+  font-size: 30px;
+}
+
+button:hover {
+  color: whitesmoke
+}
