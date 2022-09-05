@@ -1,5 +1,10 @@
 # Client
 
+## PROJECT CLIENTS (FULL STACK APP)
+
+## APP FRONTEND DEVELOPED WITH ANGULAR,FIREBASE (LOGIN, REGISTER, VERIFY ACCOUNT AND RESET PASSWORD) AND MONGODB (DASHBOARD)
+
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.4.
 
 ## Development server
